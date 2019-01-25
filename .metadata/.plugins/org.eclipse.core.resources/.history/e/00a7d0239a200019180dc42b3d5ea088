@@ -1,0 +1,5 @@
+zuul.routes.TransactionService.url=TransactionService
+
+spring.application.name=zuulService
+server.port=8333
+ribbon.eureka.enabled=true

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="centralized-config"/>
+<aop-project name="eureka-server-mmbank"/>
+<aop-project name="AccountService"/>
+<aop-project name="Website"/>
+<aop-project name="Zuul"/>
+<aop-project name="TransactionService"/>
+</aop-reference-model>

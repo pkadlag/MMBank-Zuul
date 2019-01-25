@@ -1,0 +1,31 @@
+package com.capgemini.Zuul.filter;
+
+public class PreFilter extends ZuulFilter {
+
+	@Override
+	public boolean shouldFilter() {
+		
+		return true;
+	}
+
+	@Override
+	public Object run() throws ZuulException {
+		   RequestContext ctx = RequestContext.getCurrentContext();
+		    HttpServletRequest request = ctx.getRequest();
+		 
+		    System.out.println("Request Method : " + request.getMethod() + " Request URL : " + request.getRequestURL().toString());
+		    return null;
+		  }
+	
+
+	@Override
+	public String filterType() {
+		return "preFilter";
+	}
+
+	@Override
+	public int filterOrder() {
+		return 1;
+	}
+
+}
